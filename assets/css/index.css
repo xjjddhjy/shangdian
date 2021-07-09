@@ -1,0 +1,314 @@
+
+/*  */
+.header .container{
+  display: flex;
+  justify-content:space-between;
+  
+}
+.header .container .left{
+  padding: 1rem 0;
+}
+.header .right .flex{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+
+}
+.header .right .flex .content{
+  line-height: 6rem;
+  
+}
+.header .right .flex .content span{
+  padding: 0 1em;
+  font-weight: 400;
+}
+.header .right .flex .content:hover{
+  color: white;
+  background-color: #D6EE74;
+}
+/*  */
+.nav .img img{
+  width: 100%;
+}
+/*  */
+.concept {
+  margin: 2rem 0;
+}
+.concept .title{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.384);
+}
+
+.concept .flex{
+  display: flex;
+  text-align: center;
+  margin: 1rem 0;
+  justify-content: space-between;
+}
+
+.concept .flex .desc{
+  padding: 0 1rem;
+  color: rgba(0, 0, 0, 0.459);
+  font-size: 1.2rem;
+  font-weight: bold;
+} 
+.concept .line{
+  width: 40%;
+  height: .01rem;
+  background-color: rgba(0, 0, 0, 0.315);
+  margin-top: .8rem;
+}
+/* problem */
+.problem .flex{
+  display: flex;
+  justify-content: space-evenly;
+}
+.problem .flex .content{
+  width: 33%;
+  text-align: center;
+  padding: 0 1.2rem;
+
+}
+
+.problem .flex .content .why{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin:1.2rem 0;
+  color: rgba(0, 0, 0, 0.616);
+}
+.problem .flex .content .say{
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.589);
+}
+/*  */
+.brand{
+  margin: 3rem 0;
+}
+.brand .flex{
+  display: flex;
+  justify-content: space-around;
+}
+.brand .flex>div{
+  padding: 0 1rem;
+}
+.brand .flex .left{
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  width: 20%;
+  padding-bottom: 6rem;
+}
+.brand .flex .left .title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.548);
+  margin-bottom: 1rem;
+}
+.brand .flex .left .desc{
+  color: rgba(0, 0, 0, 0.493);
+  padding-bottom: 2rem;
+  border-bottom: .2rem solid rgba(0, 0, 0, 0.59);
+}
+.brand .flex .middle{
+  width: 40%;
+}
+
+.brand .flex .middle .content{
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.568);
+  margin-top: 2.2rem;
+  line-height: 1.5rem;
+  
+}
+.brand .flex .middle .more{
+  margin-top: .5rem;
+  text-align: right;
+  
+  color: white;
+}
+.brand .flex .middle .more span{
+  background-color: #D6EE74;
+  border-radius: 5px;
+  padding: .3rem;
+}
+.brand .flex .right{
+  display: flex;
+  align-items: center;
+}
+.show{
+  padding: 3rem;
+  background-color: #FAFAFA;
+}
+
+.imgs .item2{
+  padding: 1rem;
+}.item1{grid-area:item1;}
+.item2{grid-area:item2;}
+.item3{grid-area:item3;}
+.item4{grid-area:item4;}
+.item5{grid-area:item5;}
+.item6{grid-area:item6;}
+.item7{grid-area:item7;}
+.item8{grid-area:item8;}
+.item9{grid-area:item9;}
+.grid-container{
+  justify-content: center;
+  display: grid;
+  /* padding: 10px; */
+  /*  grid-template-areas可以和 grid-template-columns或rows一起用,
+  3者可以简写成grid-template
+  '. header header header header' 180px
+  'nav main main main aside' 250px 
+  'nav footer footer footer footer' 160px /  200px 1fr 1fr 1fr 100px;
+
+*/
+  grid-template-columns: 200px 200px 263px 200px;
+  grid-template-rows: 160px 130px 125px 130px;
+  /* grid-template-columns: 1fr 1fr minmax(50,263) 1fr;
+  grid-template-rows: 160px minmax(50,130) minmax(50,125) minmax(50,130); */
+  grid-template-areas: 
+  /* 'header header header header header'
+  'nav main main main aside'
+  'nav footer footer footer footer'; */
+  'item1 item1  item2 item3'
+  'item4 item5 item5 item6'
+  'item7 item5 item5 item8'
+  'item7 item9 item9 item8'
+  ;
+  /* grid-gap:1px; */
+  background-color: lightblue;
+}
+.grid-container>img{
+  width: 100%;
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 30px;
+  /* background-color: pink; */
+}
+.grid-container{
+  background-color: #FAFAFA;
+}
+.imgs .container{
+  display: table;
+  margin: 0 auto;
+ 
+}
+.imgs .content{
+  font-size: 1.2rem;
+}
+.imgs p{
+  font-size: .8rem;
+}
+.imgs .item4{
+  padding: 1rem;
+  padding-left: 0;
+}
+.imgs .item6{
+  padding: 1rem;
+  padding-right: 0;
+  text-align: right;
+}
+.imgs .item9{
+  padding: 1rem;
+}
+/*  */
+.bar .boxs{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.bar .boxs .box{
+  display: flex;
+  background-color:#ffffff ;
+  color: rgb(5, 5, 5);
+  width: 48%;
+  margin-bottom: 1rem;
+}
+.bar .boxs .box:hover{
+  background-color:#D6EE74 ;
+  color: white;
+}
+.bar .boxs .box .date{
+  margin: 1rem;
+  padding-right: 2rem;
+  border-right: 1px solid white;
+  
+}
+.bar .boxs .box .date h3{
+  font-size: 1.5rem;
+}
+.bar .boxs .box .date p{
+  font-size: 1.2rem;
+}
+.bar .boxs .box .contentbox{
+  padding: .2rem;
+  
+}
+.bar .boxs .box .contentbox .desc{
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+.bar .more{
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+}
+.bar .more span{
+  background-color: #D6EE74;
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+}
+.footer{
+  background-color: #454545;
+  margin-top: 5rem;
+  color: white;
+  padding: 3rem 0;
+}
+.footer .logo{
+  display: flex;
+  align-items: center;
+}
+.footer .container{
+  display: flex;
+  justify-content: space-around;
+}
+.footer .navigation{
+  width: 15%;
+}
+.footer .navigation .title{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  
+}
+.footer .navigation .content{
+  font-size: .8rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5rem;
+}
+.footer .contact .title{
+  font-size: 1.2rem;margin-bottom: 2rem;
+}
+.footer .contact .content{
+  font-size: .8rem;
+}
+.footer .qrcode{
+  display: flex;
+  align-items: center;
+ 
+
+}
+.footer .qrcode img{
+  padding: .5rem;
+  background: linear-gradient(to left, rgb(255, 255, 255),rgb(255, 255, 255)) left top no-repeat,
+  linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 255, 255)) left top no-repeat,
+  linear-gradient(to left,rgb(255, 255, 255),rgb(255, 255, 255)) right top no-repeat,
+  linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 255, 255)) right top no-repeat,
+  linear-gradient(to left,rgb(255, 255, 255),rgb(255, 255, 255)) left bottom no-repeat,
+  linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 255, 255)) left bottom no-repeat,
+  linear-gradient(to left,rgb(255, 255, 255),rgb(255, 255, 255)) right bottom no-repeat,
+  linear-gradient(to left,rgb(255, 255, 255),rgb(255, 255, 255)) right bottom no-repeat;
+  background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px;
+}
